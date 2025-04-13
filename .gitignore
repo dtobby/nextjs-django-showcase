@@ -1,0 +1,26 @@
+# Docker
+**/Dockerfile # Often good to commit Dockerfiles, but you can ignore if preferred
+# docker-compose.yml # DEFINITELY COMMIT THIS
+
+# Python / Django
+backend/venv/
+backend/env/ # Add this line for your specific venv name
+backend/__pycache__/
+backend/*.pyc
+backend/db.sqlite3 # Ignore default dev db if created locally
+backend/.env # If you use python-dotenv locally
+
+# Node.js / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env.local
+frontend/.env*.production
+frontend/.env*.development
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
